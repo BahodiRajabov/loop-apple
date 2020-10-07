@@ -1,0 +1,234 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+:root {
+  --main-color: #ea625c;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.header {
+  padding-top: 30px;
+}
+.container {
+  max-width: 940px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container_header {
+  display: flex;
+  align-items: center;
+}
+.logo_link {
+  margin-right: auto;
+}
+.nav {
+}
+.nav_list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.nav_item {
+  margin-right: 35px;
+  position: relative;
+}
+.nav_link {
+  text-decoration: none;
+  color: black;
+  opacity: 0.5;
+  text-transform: capitalize;
+  /* padding-top: 10px; */
+  padding-bottom: 5px;
+  display: block;
+}
+.nav_link::after {
+  content: "";
+  height: 2px;
+  display: inline-block;
+  width: 100%;
+  /* background-color: #333; */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: background-color 0.2s ease;
+}
+.nav_link:hover::after {
+  background-color: #333;
+}
+.search_input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  opacity: 0.8;
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+.intro {
+  background-image: url("../img/watches.jpg");
+  background-repeat: no-repeat;
+  padding-bottom: 195px;
+  padding-top: 100px;
+  background-position: right calc(50% - 700px) center;
+  background-size: auto 600px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.intro_info {
+  width: 390px;
+}
+.intro_header {
+  font-size: 40px;
+  opacity: 0.9;
+  margin-top: 0;
+}
+.intro_desc {
+  color: #000000;
+  opacity: 0.5;
+  border-left: 3px solid rgba(0, 0, 0, 0.8);
+  padding-left: 40px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.intro_link {
+  background-color: var(--main-color);
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  transition: opacity 0.2s ease;
+}
+.intro_link:hover {
+  opacity: 0.9;
+}
+.about {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.about_list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 -35px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about_item {
+  width: 250px;
+  margin: 0 35px;
+}
+.about_item_header {
+  margin-top: 0;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.about_item_desc {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.pagination_list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pagination_item {
+  margin-right: 10px;
+}
+.pagination_bnt {
+  border: none;
+  padding: 3px;
+  background-color: #000000;
+  border-radius: 50%;
+  opacity: 0.2;
+}
+.learn_more {
+  color: var(--main-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.learn_more::before {
+  content: "";
+  width: 40px;
+  height: 3px;
+  display: inline-block;
+  background-color: var(--main-color);
+  margin-right: 10px;
+  transform-origin: left;
+  transition: width 0.3s ease;
+}
+.learn_more:hover::before {
+  /* transform: scaleX(1.4); */
+  width: 60px;
+}
+.product_info{
+width: 390px;
+}
+.product_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.footer {
+  background-image: url("../img/runners.jpg");
+  background-position: center center;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.footer_info {
+  margin-left: auto;
+  width: 390px;
+}
+.intro_header_footer {
+  color: #fff;
+}
+.intro_desc_footer {
+  color: #fff;
+
+  opacity: 1;
+  border-left: 3px solid #fff;
+}
